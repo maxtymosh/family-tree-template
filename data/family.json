@@ -1,0 +1,754 @@
+{
+  "people": [
+    {
+      "id": "P-0001",
+      "key": "root",
+      "name": "Олена Приклад",
+      "level": 0,
+      "branch": "self",
+      "livingStatus": "unknown",
+      "born": "1995",
+      "died": "",
+      "place": "Львів",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Львів",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0002",
+      "key": "mother",
+      "name": "Марія Приклад",
+      "level": -1,
+      "branch": "m",
+      "livingStatus": "unknown",
+      "born": "1970",
+      "died": "",
+      "place": "Львів",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Львів",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0003",
+      "key": "father",
+      "name": "Іван Зразок",
+      "level": -1,
+      "branch": "f",
+      "livingStatus": "unknown",
+      "born": "1968",
+      "died": "",
+      "place": "Київ",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Київ",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0004",
+      "key": "mgm",
+      "name": "Ганна Демонстраційна",
+      "level": -2,
+      "branch": "m",
+      "livingStatus": "unknown",
+      "born": "1945",
+      "died": "",
+      "place": "Львів",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Львів",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0005",
+      "key": "mgf",
+      "name": "Петро Приклад",
+      "level": -2,
+      "branch": "m",
+      "livingStatus": "unknown",
+      "born": "1943",
+      "died": "",
+      "place": "Львів",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Львів",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0006",
+      "key": "pgm",
+      "name": "Софія Зразок",
+      "level": -2,
+      "branch": "f",
+      "livingStatus": "unknown",
+      "born": "1944",
+      "died": "",
+      "place": "Київ",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Київ",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0007",
+      "key": "pgf",
+      "name": "Андрій Зразок",
+      "level": -2,
+      "branch": "f",
+      "livingStatus": "unknown",
+      "born": "1940",
+      "died": "",
+      "place": "Київ",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Київ",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0008",
+      "key": "brother",
+      "name": "Тарас Приклад",
+      "level": 0,
+      "branch": "m",
+      "livingStatus": "unknown",
+      "born": "1998",
+      "died": "",
+      "place": "Львів",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Львів",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0009",
+      "key": "aunt",
+      "name": "Наталія Приклад",
+      "level": -1,
+      "branch": "m",
+      "livingStatus": "unknown",
+      "born": "1972",
+      "died": "",
+      "place": "Львів",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Львів",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    },
+    {
+      "id": "P-0010",
+      "key": "cousin",
+      "name": "Дарина Приклад",
+      "level": 0,
+      "branch": "m",
+      "livingStatus": "unknown",
+      "born": "2000",
+      "died": "",
+      "place": "Львів",
+      "notes": "Вигадана особа для демонстрації шаблону.",
+      "alias": "",
+      "refs": [
+        0
+      ],
+      "birthLocality": "Львів",
+      "nationalities": [],
+      "ancestries": [],
+      "professions": [],
+      "history": {
+        "summary": [
+          {
+            "text": "Вигаданий демонстраційний запис. Замініть відомостями власної родини.",
+            "refs": [
+              {
+                "source": 0
+              }
+            ]
+          }
+        ],
+        "sections": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "R-0001",
+      "a": "mother",
+      "b": "root",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0002",
+      "a": "father",
+      "b": "root",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0003",
+      "a": "mother",
+      "b": "brother",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0004",
+      "a": "father",
+      "b": "brother",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0005",
+      "a": "mgm",
+      "b": "mother",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0006",
+      "a": "mgf",
+      "b": "mother",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0007",
+      "a": "mgm",
+      "b": "aunt",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0008",
+      "a": "mgf",
+      "b": "aunt",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0009",
+      "a": "pgm",
+      "b": "father",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0010",
+      "a": "pgf",
+      "b": "father",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0011",
+      "a": "aunt",
+      "b": "cousin",
+      "type": "parent",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0012",
+      "a": "mother",
+      "b": "father",
+      "type": "spouse",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0013",
+      "a": "mgm",
+      "b": "mgf",
+      "type": "spouse",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    },
+    {
+      "id": "R-0014",
+      "a": "pgm",
+      "b": "pgf",
+      "type": "spouse",
+      "roleA": "",
+      "roleB": "",
+      "refs": [
+        0
+      ],
+      "uncertain": false,
+      "status": "demo",
+      "confidence": "demo",
+      "note": "",
+      "rationale": "Вигаданий приклад зв’язку."
+    }
+  ],
+  "sources": [
+    {
+      "id": "A-0001",
+      "title": "Вигаданий демонстраційний запис",
+      "path": "",
+      "kind": "user-testimony",
+      "text": "Усі люди, дати, родинні зв’язки та події у цьому шаблоні вигадані."
+    }
+  ],
+  "lineages": [
+    {
+      "id": "maternal-demo",
+      "label": "Приклади",
+      "side": "m",
+      "tone": 0,
+      "anchors": [
+        "mgm",
+        "mgf"
+      ]
+    },
+    {
+      "id": "paternal-demo",
+      "label": "Зразки",
+      "side": "f",
+      "tone": 1,
+      "anchors": [
+        "pgm",
+        "pgf"
+      ]
+    }
+  ],
+  "photos": [],
+  "geography": {
+    "places": [
+      {
+        "id": 1,
+        "name": "Львів",
+        "lat": 49.84,
+        "lon": 24.03,
+        "precision": "locality",
+        "reference": ""
+      },
+      {
+        "id": 2,
+        "name": "Київ",
+        "lat": 50.45,
+        "lon": 30.52,
+        "precision": "locality",
+        "reference": ""
+      }
+    ],
+    "events": [
+      {
+        "personId": "P-0001",
+        "placeId": 1,
+        "kind": "birth",
+        "period": "1995",
+        "year": 1995,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0002",
+        "placeId": 1,
+        "kind": "birth",
+        "period": "1970",
+        "year": 1970,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0003",
+        "placeId": 2,
+        "kind": "birth",
+        "period": "1968",
+        "year": 1968,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0004",
+        "placeId": 1,
+        "kind": "birth",
+        "period": "1945",
+        "year": 1945,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0005",
+        "placeId": 1,
+        "kind": "birth",
+        "period": "1943",
+        "year": 1943,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0006",
+        "placeId": 2,
+        "kind": "birth",
+        "period": "1944",
+        "year": 1944,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0007",
+        "placeId": 2,
+        "kind": "birth",
+        "period": "1940",
+        "year": 1940,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0008",
+        "placeId": 1,
+        "kind": "birth",
+        "period": "1998",
+        "year": 1998,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0009",
+        "placeId": 1,
+        "kind": "birth",
+        "period": "1972",
+        "year": 1972,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      },
+      {
+        "personId": "P-0010",
+        "placeId": 1,
+        "kind": "birth",
+        "period": "2000",
+        "year": 2000,
+        "endYear": null,
+        "duration": "unknown",
+        "certainty": "reported",
+        "sourceIds": [
+          "A-0001"
+        ],
+        "note": "Вигадане місце народження."
+      }
+    ]
+  }
+}

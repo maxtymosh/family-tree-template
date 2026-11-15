@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Родинне дерево демонстраційної родини</title>
+  <link rel="stylesheet" href="app/viewer.css">
+  <link rel="stylesheet" href="app/map.css">
+  <script defer src="app/tree-data.js"></script>
+  <script defer src="app/person-evidence.js"></script>
+  <script defer src="app/life-dates.js"></script>
+  <script defer src="app/kin-layout.js"></script>
+  <script defer src="app/ancestor-names.js"></script>
+  <script defer src="app/branches.js"></script>
+  <script defer src="app/lineages.js"></script>
+  <script defer src="app/pedigree.js"></script>
+  <script defer src="app/export-scene.js"></script>
+  <script defer src="app/export-pdf.js"></script>
+  <script defer src="app/export-png.js"></script>
+  <script defer src="app/family-links.js"></script>
+  <script defer src="app/family-photos.js"></script>
+  <script defer src="app/map-land.js"></script>
+  <script defer src="app/map.js"></script>
+  <script defer src="app/viewer.js"></script>
+</head>
+<body>
+<header class="masthead">
+  <div><h1>Родинне дерево</h1><p class="byline">Сімейний архів демонстраційної родини</p></div>
+  <nav class="top-nav" aria-label="Розділи"><button id="treeTab" aria-pressed="true">Дерево</button><button id="mapTab" aria-pressed="false">Мапа</button><button id="albumTab" aria-pressed="false">Фотографії</button></nav>
+</header>
+<main>
+  <section id="viewFilters" aria-label="Фільтри родини">
+    <div class="toolbar">
+      <div class="scopes" role="group" aria-labelledby="lineFilterLabel">
+        <span class="filter-label" id="lineFilterLabel">Лінія</span>
+        <button type="button" data-scope="all" aria-pressed="true">Обидві лінії</button>
+        <button type="button" data-scope="m" aria-pressed="false">Лінія мами</button>
+        <button type="button" data-scope="f" aria-pressed="false">Лінія тата</button>
+      </div>
+      <div class="source-toolbar" id="sourceToolbar"></div>
+      <div class="find"><label class="sr-only" for="search">Пошук родичів</label>
+        <input type="search" id="search" placeholder="Пошук за іменем, роком, місцем…" autocomplete="off">
+        <div class="results" id="results" hidden></div>
+      </div>
+    </div>
+    <div class="branch-bar" id="branchControls">
+      <div class="kin-filter" role="group" aria-labelledby="kinFilterLabel">
+        <span class="filter-label" id="kinFilterLabel">Кого показувати</span>
+        <div class="kinds">
+          <button type="button" data-kind="everyone" aria-pressed="true">Уся родина</button>
+          <button type="button" data-kind="closeKin" aria-pressed="false" title="Прямі предки основної особи, його дядьки, тітки, рідні й двоюрідні брати та сестри">Предки й близькі</button>
+          <button type="button" data-kind="ancestors" aria-pressed="false">Лише предки</button>
+          <button type="button" id="showSiblings" data-kind="siblings" aria-pressed="false" title="Рідні й двоюрідні брати та сестри основної особи">Брати й сестри</button>
+        </div>
+      </div>
+      <label class="generation-control" for="generationDepth">Покоління від основної особи
+        <select id="generationDepth" title="Глибина в поколіннях по обидва боки від основної особи. У режимі «Уся родина» показано також бічні гілки, пов’язані в цих межах."></select>
+      </label>
+      <output id="graphCount" aria-live="polite"></output>
+    </div>
+    <div class="lineage-key" id="lineageKey" role="group" aria-label="Підсвітити родинну гілку" hidden></div>
+    <div class="context-line" id="familyContext" hidden>
+      <button id="returnView">← До всіх родичів</button><h2 id="familyTitle"></h2>
+      <div class="share-action">
+        <button type="button" id="copyFamilyLink">Скопіювати посилання на гілку</button>
+        <span class="share-feedback" id="familyLinkStatus" role="status"></span>
+      </div>
+      <nav id="familyRoute" class="family-route" aria-label="Шлях до основної особи" hidden></nav>
+    </div>
+  </section>
+  <section id="treeView" aria-label="Родинне дерево">
+    <div class="work-area">
+      <div class="map-panel">
+        <div class="wing-guide" id="wingGuide" aria-label="Родинні лінії">
+          <span class="m"><b>Мамина лінія</b></span><span class="f"><b>Татова лінія</b></span>
+        </div>
+        <div class="board" id="board" tabindex="0" aria-label="Схема поколінь">
+          <div id="extent"><div id="scene"></div></div>
+        </div>
+      </div>
+      <aside class="side" id="side" aria-label="Картка людини" hidden></aside>
+    </div>
+    <div class="controls" id="graphControls">
+      <div class="legend" aria-label="Позначення зв’язків">
+        <span><i></i>Батьки й діти</span><span><i class="dash"></i>Інша спорідненість</span><span><i class="dot"></i>Потребує уточнення</span>
+      </div>
+      <div class="zoom"><button id="minus" aria-label="Зменшити масштаб">−</button><output id="scale"></output><button id="plus" aria-label="Збільшити масштаб">+</button><button id="fit">Умістити</button><button id="home">До основної особи</button>
+        <div class="tree-exports" role="group" aria-label="Зберегти поточне дерево">
+          <button type="button" id="exportPDF" aria-label="Зберегти дерево як PDF" title="Зберегти дерево як PDF через друк"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h8l4 4v14H6z M14 3v5h4 M9 12h6 M9 16h6"/></svg>PDF</button>
+          <button type="button" id="exportPNG" aria-label="Завантажити дерево як PNG" title="Завантажити дерево як зображення високої якості"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8" cy="9" r="1.3"/><path d="m4 17 5-5 4 4 3-4 5 5"/></svg>PNG</button>
+          <button type="button" id="copyPNG" aria-label="Скопіювати дерево як зображення" title="Скопіювати зображення для вставлення в повідомлення"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V4a1 1 0 0 0-1-1H5a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h4"/></svg></button>
+        </div>
+      </div>
+      <p class="export-status" id="exportStatus" role="status"></p>
+    </div>
+  </section>
+  <section id="geoView" aria-label="Родинна мапа" hidden></section>
+  <section id="album" hidden>
+    <section id="familyAlbum" aria-labelledby="familyAlbumTitle" hidden>
+      <div class="family-album-header">
+        <h2 id="familyAlbumTitle">Родинні фотографії</h2>
+        <label class="sr-only" for="familyAlbumSearch">Пошук за підписом, іменем або датою фотографії</label>
+        <input type="search" id="familyAlbumSearch" placeholder="Підпис, ім’я або дата…" autocomplete="off">
+      </div>
+      <div class="gallery family-album-grid" id="familyAlbumGrid"></div>
+      <p id="familyAlbumEmpty" role="status" hidden>За цим запитом фотографій не знайдено.</p>
+    </section>
+    <h2>Аркуші родинного інтерв’ю</h2><p class="byline">Записано власником архіву зі слів родичів.</p>
+    <div class="gallery" id="gallery"></div>
+  </section>
+</main>
+<dialog id="personDrawer" aria-labelledby="personName"></dialog>
+<dialog id="familyPhotosDialog" aria-labelledby="familyPhotosTitle">
+  <header class="family-photos-bar">
+    <h2 id="familyPhotosTitle">Родинні фотографії</h2>
+    <button type="button" id="closeFamilyPhotos" aria-label="Закрити фотографії">Закрити ×</button>
+  </header>
+  <div id="familyPhotosBody" tabindex="0" aria-label="Перегляд фотографій"></div>
+</dialog>
+<dialog id="sourceDialog" aria-label="Джерело родинного запису"><button class="close" id="closeDialog">Закрити ×</button><div id="sourceBody"></div></dialog>
+</body></html>
